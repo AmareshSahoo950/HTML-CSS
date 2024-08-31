@@ -1,0 +1,313 @@
+
+--In HTML there are 3 types of elements .
+   1.Block elements :- 
+        takes up the entire line(a paragraph by default is a Block element) in their container .
+   2. inline-block element :-
+         only takes up as much space as needed. 
+   3. inline element :-
+         appear within a line of text(<strong> is an example )           
+
+- The first two types are important as they decide how the text were displayed in the screen whether above each other or side by side  .
+-We can use <display> element to switch between block and inline-block element .
+
+
+ --<div> :- stands for divison 
+        just a box 
+        It is bydefaulty a block element.
+        These are basically meant to be containers,which are used to group the elements .
+
+
+    --Nested layout Technique
+      1. Vertical layout:-
+          here items are on top of each other .
+      2. Horizontal Layout :-
+          here items are beside each other .      
+
+
+_______________________________________________________________________________________________________________________________________
+-- CSS Grid 
+ ------------
+      -syntax :-
+        display: grid;
+        grid-template-columns: width1,........width n ;            (1,2,....,n are the columns)
+      -To overcome the gap problem between two <divs> occured due to space between two divs we use grid .
+      -Maintains alignment much better,all the grid blocks adjust based on the specific modified block .
+      -If we have not mentioned a value in grid-template-columns then the div will appear in the 2nd row.
+
+      property :-
+      --------------
+      1fr :-
+      ---------
+      fr means free space . It takes the entire space remaining and the number behind it tells us relatively  how much of the remaining space this columns get .(It is like a ratio 1:1 or 1:2 like this).
+
+      column-gap :-
+      ---------------
+      For spacing between the columns.
+
+      row-gap :-
+      ---------------
+      For spacing between the rows.
+__________________________________________________________________________________________________________________________________________________________________________________________________________________      
+
+NOTE:-
+-------
+In box shadow inset property is used to give inner shadow (inside of the box .)
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________      
+-- Flexbox -
+ ----------
+ Flexbox is similar to CSS grid but it is more flexible .
+ The biggest difference between them is -
+ -grid have rigid layout.
+ -Flexbox have flexible layout . 
+
+-If Flex direction is row then the below  properties are applied and for flex direction =column the work of justify content and align items becomes opposite.
+justify-content works vertically and align-items works horizontally.
+
+
+  change alignment Horizontally -
+ ---------------------------------
+
+ justify-content is used,It has 3 values
+ ----------------
+ -Start(left side)
+ -center(in the middle) 
+ -End (right side)
+ -space-between(space between each of them )
+
+
+align-items-
+--------------
+It is used to align the items vertically.
+It has 3 values-  
+-Start(place the elements at upside of the flex)
+-center(place the elements at the center)
+-stretch(stretch to the top and bottom)
+-end(place the elements downside)
+
+
+flex-shrink :
+-----------------
+Used to set how much a flex can shrink .
+If it is set to 0 then it will not shrink at all .
+
+
+how to make a input bar shrink 
+-------------------------------
+It is simple just set display =flex
+and style input bar as flex :1;
+set width=0;
+that's it.
+The input bar will shrink to its maximum.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+
+_____________________________________________________________________________________________________________________________________________
+lesson 14
+-----------
+
+CSS POSITION -
+----------------
+-It adds another dimension to our page.
+-It is used to put one element on top of the other .
+-Like the time duration on the video thumbnail in youtube.
+-Like the numbers displayed on top of the notification symbol in youtube .
+-By default it is static in nature .So declaring position as static is same as not declaring it at all.
+-By declaring an element's position as fixed,we are making the element to float in our page It will not take the page space anymore .
+-It has 4 properties :-
+top
+bottom
+left
+right
+
+
+lesson 15
+----------
+
+position Absolute and relatively -
+-----------------------------------
+-Whenever an element is declared as relative it starts getting displayed infront of the element which is present     above that relative element in the html file(coding part).
+(In our case (thumbnail = position relative) div is written below header div part,so it floated on top of header part. but video-info div is bydefault static so it remains below header.)
+-This happens because of the difference in z-index values . 
+
+--difference between fixed and absolute :-
+ ----------------------------------------
+->fixed - placed in the browser window .    ( browser window never moves.) 
+->absolute - placed on the page .           ( page is what we keep scrolling .)
+
+
+z-index
+---------
+-The element with higher Z-index value gets displayed on the front (any value like 1,2,789,100).
+-By default the z-index value of an element is set as 0 .
+-It is declared inside the style of any element .
+-To manage the order of n no of layers (which will be displayed after whom we use Z-index) .
+-It is not a very commonly used concept that we will often run into.
+_________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+- Major skills of HTMl/CSS :-
+ ---------------------------
+ 1. Nested Layouts
+ 2. Display: block/inline-block
+ 3. Grid
+ 4. Flexbox
+ 5. Position(Static,Fixed,Absolute,Relative)
+
+ lesson 16
+ ------------
+ If we want to target a group of same elements then we usually declare a class inside each of those elements but if we have large number of elements than declaring classes is not atall an option so the shortcut is -
+ mention the class name inside which our group of elements are present and then write the name of the element with a space .
+ eg :-
+        <div class="A">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        </div>
+
+  The command is .A img{styling...}   
+---------------------------------------------------------------------------------------------------------------------------------------
+  To target the searchbar placeholder :-
+      <input class="A" placeholder ="Type here">
+      ---------
+      ----------
+      </input>  
+  
+  The command is  :-
+      A::placeholder {styling}
+_______________________________________________________________________________________________________________________________________
+
+
+pointer-events property :-
+----------------------------
+
+none as value -
+----------------
+-It is used when we want an element to pop up after hovering over a specific element inside that container.
+
+-Here the container contains both the popup element and the element on which we will hover to get the pop up element .
+
+-But the problem is whenever our cursor hovers over the container it shows the pop up element.
+
+-So by choosing pointer-events as none ,the pop up will only appear whenever we will hover over a specific element within the container and not just anywhere in the container.
+
+_______________________________________________________________________________________________________________________________________
+
+white-space property :-
+-------------------------
+
+nowrap as value :-
+------------------- 
+By using this property we can make any written Sentence/text inside any size of div(smaller) to get aligned. that is (staying in one line).
+_______________________________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________________________
+CSS Features :-
+-----------------
+Media Query :-
+---------------
+-It is used to create a responsive design.
+- It is used to make our Webpage more responsive .
+-As we have seen in youtube,when the screen size is squeezed/expanded the number of videos per row become greater/less.
+
+syntax :-
+----------
+@media(condition){
+  .selector{
+
+    property to target.
+
+  }
+}
+------------------------------------------------------------------------------------------------------------------------
+CSS Shorthand properties :-
+-----------------------------
+padding:-
+--------
+Assigining 2 values:-
+---------------------
+padding : vetical  Horizontal;
+
+Assigining 4 values :-  
+---------------------    
+padidng : top right bottom left (clockwise manner)
+
+margin :-
+----------
+Similar like padding
+
+Border :-
+----------
+Border : width style color;
+
+---------------------------------------------------------------------------------------
+
+Inheritance :-
+--------------
+-Styling made to outer elements get passed down to the inner elements .
+-It saves a lot of code.
+-It is not applicable for all the properties .
+-It mostly works on text properties like text-decoration,color,font-weight,font-family,font-style etc.
+-It doesn't work on properties like Border,padding,margin etc. 
+
+CSS Specificity :-
+-------------------
+-If child and parent have the same property declared with different values then the priority will go to the child as it is more specific (child targets a specific element while the parent is targeting everything present inside it ).
+
+-This is overriding of parent properties in child . 
+
+_______________________________________________________________________________________________________________________
+
+Semantic elements :-
+------------------------
+-This elements works the same way as the div except they have a special meaning to screen readers,search engines and any other kind of device/robot that is reading our webpage .
+
+-By using it the structure of our webpage is recognized correctly in a screen reader .
+
+<header></header>   - This is used to put head part of our webpage inside it .
+<nav></nav>         - This is used to put navigation part of our webpage inside it .
+<main></main>       - This is used to put the main part of our webpage inside it .
+<section></section> - It is declared inside main to divided the page into parts based on their functionalities .
+
+
+syntax-
+-------------
+<header>
+ -----
+</header>
+
+ <nav>
+ ------
+ </nav>
+ 
+ <main>
+   <section class="video">
+       <div class="video-thumbanil">
+        ----
+        ---- 
+       </div>
+        <div class="vidoe-info">
+         -----
+         -----
+        </div>
+   </section>
+
+   <section class="comment">
+     -----
+   </section>
+
+   <section class"bottom">
+     -----
+   </section>
+
+ </main>
+
+ _______________________________________________________________________________________________________________________
+
+ Comment :-
+ ------------
+
+-To write comment inside an HTML file use <!-- comment -->
+-To write comment in CSS file use /* comment */ 
