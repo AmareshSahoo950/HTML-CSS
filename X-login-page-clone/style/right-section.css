@@ -1,0 +1,381 @@
+@media(min-width:1130.1px)
+{
+    .right-section{
+        flex:1;
+        padding-left: 70px;
+        padding-top: 40px;  
+    }
+    
+    .happening-now{
+        font-size: 70px;
+        font-weight: 1000;
+        width: 600px;
+    }
+    
+    .join-today{
+        font:bold 30px arial;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+    
+    .google-sign-up{
+     font: 400 17px arial;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 15px;
+     transition-duration: 0.25s;
+     
+    }
+    
+    .google-sign-up:hover{
+        background-color:rgb(247, 252, 255);
+        border-color : rgb(195, 215, 233);
+    }
+    
+    .apple-sign-up{
+        font: 700 18px arial ;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.25s;
+    }
+    
+    .apple-sign-up:hover{
+        background-color:rgb(230, 230, 230) ;
+    }
+    
+    .or-line{
+        margin: 3px 0;
+        width: 350px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .dash{
+        color: rgb(237, 237, 237);
+        padding:0;
+        position: relative;
+        top: -7px;
+    }
+    
+    .or{
+        font:100 19px arial;
+        color: rgb(85, 85, 85);
+        padding:6px 10px;
+    }
+    
+    button{
+        display: block;
+        height: 45px;
+        width: 330px;
+        border-radius:30px ;
+        margin-bottom: 10px;
+        font-size: 20px;
+        background-color: white;
+        border: 1px solid rgb(206, 206, 206);
+        cursor: pointer;
+        
+    }
+    
+    .create-account{
+        background-color: rgb(61, 157, 236);
+        color: white;
+        font: bold 18px arial ;
+        transition-duration:0.15s ;
+    }
+    
+    .create-account:hover{
+        background-color:rgb(51, 134, 201) ;
+    }
+    
+    .terms-and-conditions{
+        width: 390px;
+        font-size: 13px;
+        color: rgb(111, 111, 111);
+        line-height: 17px;
+    }
+    
+    a{
+        color: rgb(62, 157, 236);
+        text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    .already-have-an-account{
+        font: 700 19px arial;
+        margin-top:30px ;
+        margin-bottom: 20px;
+    }
+    
+    .sign-in{
+        color: rgb(62, 157, 236);
+        font-weight: bold;
+        font-size: 18px;
+        transition-duration: 0.15s;
+    }
+    .sign-in:hover{
+        background-color:rgb(236, 248, 255) ;
+    }
+ 
+    
+}
+
+
+@media(max-width:1130px){
+    .right-section{
+        padding-top: 55px;  
+        flex: 1;
+    }
+    
+    .happening-now{
+        font-size: 70px;
+        font-weight: 1000;
+        width: 300px;
+    }
+    
+    .join-today{
+        font:bold 30px arial;
+        margin-top: 50px;
+        margin-bottom: 30px; 
+    }
+    
+    .google-sign-up{
+     font: 400 17px arial;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 15px;
+     transition-duration: 0.25s;
+     
+    }
+    
+    .google-sign-up:hover{
+        background-color:rgb(247, 252, 255);
+        border-color : rgb(195, 215, 233);
+    }
+    
+    .apple-sign-up{
+        font: 700 18px arial ;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.25s;
+    }
+    
+    .apple-sign-up:hover{
+        background-color:rgb(230, 230, 230) ;
+    }
+    
+    .or-line{
+        margin: 3px 0;
+        width: 350px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .dash{
+        color: rgb(237, 237, 237);
+        padding:0;
+        position: relative;
+        top: -7px;
+    }
+    
+    .or{
+        font:100 19px arial;
+        color: rgb(85, 85, 85);
+        padding:6px 10px;
+    }
+    
+    button{
+        display: block;
+        height: 45px;
+        width: 330px;
+        border-radius:30px ;
+        margin-bottom: 10px;
+        font-size: 20px;
+        background-color: white;
+        border: 1px solid rgb(206, 206, 206);
+        cursor: pointer;
+        
+    }
+    
+    .create-account{
+        background-color: rgb(61, 157, 236);
+        color: white;
+        font: bold 18px arial ;
+        transition-duration:0.15s ;
+    }
+    
+    .create-account:hover{
+        background-color:rgb(51, 134, 201) ;
+    }
+    
+    .terms-and-conditions{
+        width: 390px;
+        font-size: 13px;
+        color: rgb(111, 111, 111);
+        line-height: 17px;
+    }
+    
+    a{
+        color: rgb(62, 157, 236);
+        text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    .already-have-an-account{
+        font: 700 19px arial;
+        margin-top:70px ;
+        margin-bottom: 20px;
+    }
+    
+    .sign-in{
+        color: rgb(62, 157, 236);
+        font-weight: bold;
+        font-size: 18px;
+        transition-duration: 0.15s;
+    }
+    .sign-in:hover{
+        background-color:rgb(236, 248, 255) ;
+    }
+   
+    
+}
+
+
+@media(max-width:560px){
+    .right-section{
+        padding-top: 50px;  
+        flex: 1;
+    }
+    
+    .happening-now{
+        font-size: 50px;
+        font-weight: 1000;
+        width: 430px;
+    }
+    
+    .join-today{
+        font:bold 30px arial;
+        margin-top: 40px;
+        margin-bottom: 25px; 
+    }
+    
+    .google-sign-up{
+     font: 400 17px arial;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 15px;
+     transition-duration: 0.25s;
+     
+    }
+    
+    .google-sign-up:hover{
+        background-color:rgb(247, 252, 255);
+        border-color : rgb(195, 215, 233);
+    }
+    
+    .apple-sign-up{
+        font: 700 18px arial ;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.25s;
+    }
+    
+    .apple-sign-up:hover{
+        background-color:rgb(230, 230, 230) ;
+    }
+    
+    .or-line{
+        margin: 1px 0;
+        width: 350px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .dash{
+        color: rgb(237, 237, 237);
+        padding:0;
+        position: relative;
+        top: -7px;
+    }
+    
+    .or{
+        font:100 19px arial;
+        color: rgb(85, 85, 85);
+        padding:6px 10px;
+    }
+    
+    button{
+        display: block;
+        height: 45px;
+        width: 330px;
+        border-radius:30px ;
+        margin-bottom: 10px;
+        font-size: 20px;
+        background-color: white;
+        border: 1px solid rgb(206, 206, 206);
+        cursor: pointer;
+        
+    }
+    
+    .create-account{
+        background-color: rgb(61, 157, 236);
+        color: white;
+        font: bold 18px arial ;
+        transition-duration:0.15s ;
+        margin-bottom: 0;
+    }
+    
+    .create-account:hover{
+        background-color:rgb(51, 134, 201) ;
+    }
+    
+    .terms-and-conditions{
+        width: 390px;
+        font-size: 13px;
+        color: rgb(111, 111, 111);
+        line-height: 15px;
+        margin-top: 7px;
+    }
+    
+    a{
+        color: rgb(62, 157, 236);
+        text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+    
+    .already-have-an-account{
+        font: 700 19px arial;
+        margin-top:60px ;
+        margin-bottom: 20px;
+    }
+    
+    .sign-in{
+        color: rgb(62, 157, 236);
+        font-weight: bold;
+        font-size: 18px;
+        transition-duration: 0.15s;
+    }
+    .sign-in:hover{
+        background-color:rgb(236, 248, 255) ;
+    }
+   
+    
+}

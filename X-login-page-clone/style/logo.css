@@ -1,0 +1,44 @@
+@media (min-width: 1130.1px) {
+  .logo {
+    flex: 0.8;
+    padding: 160px 0 100px 200px;
+  }
+  img {
+    height: 300px;
+    width: 340px;
+  }
+
+  .google-logo {
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+  }
+  .apple-logo {
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .logo {
+    flex: 1;
+    padding-top: 40px;
+  }
+  img {
+    height: 40px;
+    width: 40px;
+  }
+  .google-logo {
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+  }
+  .apple-logo {
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+}
